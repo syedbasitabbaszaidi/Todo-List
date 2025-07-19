@@ -7,17 +7,6 @@ function App() {
   const [finishedTodos,setFinishedTodos] = useState([])
   const [showFinished,setShowFinised] = useState(false)
 
-  const handleAdd = () => {
-    if (todo.length >= 3){
-      let newTodos = [...todos]
-      newTodos.push({
-      todo:todo,
-      isCompleted:false
-    })
-    setTodos(newTodos)
-    }
-  }
-
   const handleChange = (e) => {
     setTodo(e.target.value)
   }
